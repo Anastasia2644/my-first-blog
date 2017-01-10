@@ -4,18 +4,26 @@
         <h2><strong>Amazing fishes</strong></h2>
         </head>
 <body>
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+
     <div><h3>What is fish?</h3>
-    <p><em>A fish is any member of a group of organisms that consist of all gill-bearing aquatic craniate animals that lack limbs with digits.
-         They form a sister group to the tunicates, together forming the olfactores.
-         Included in this definition are the living hagfish, lampreys, and cartilaginous and bony fish as well as various extinct related groups.
-         Tetrapods emerged within lobe-finned fishes, so cladistically they are fish as well.
-         However, traditionally fish are rendered obsolete or paraphyletic by excluding the tetrapods (i.e., the amphibians, reptiles, birds and mammals which all descended from within the same ancestry).
-         Because in this manner the term "fish" is defined negatively as a paraphyletic group, it is not considered a formal taxonomic grouping in systematic biology.
-         The traditional term pisces (also ichthyes) is considered a typological, but not a phylogenetic classification.</em></p>
+        <p><em>A fish is any member of a group of organisms that consist of all gill-bearing aquatic craniate animals that lack limbs with digits.
+             They form a sister group to the tunicates, together forming the olfactores.
+             Included in this definition are the living hagfish, lampreys, and cartilaginous and bony fish as well as various extinct related groups.
+             Tetrapods emerged within lobe-finned fishes, so cladistically they are fish as well.
+             However, traditionally fish are rendered obsolete or paraphyletic by excluding the tetrapods (i.e., the amphibians, reptiles, birds and mammals which all descended from within the same ancestry).
+             Because in this manner the term "fish" is defined negatively as a paraphyletic group, it is not considered a formal taxonomic grouping in systematic biology.
+             The traditional term pisces (also ichthyes) is considered a typological, but not a phylogenetic classification.</em></p>
 
     <img src="https://floridafishingchartersinfo.files.wordpress.com/2015/08/dollarphotoclub_55539140.jpg"/></div>
 
-    <div>
+  <div>
         <h3>Taxonomy</h3>
         <p><em>Fish are a paraphyletic group: that is, any clade containing all fish also contains the tetrapods, which are not fish. For this reason, groups such as the "Class Pisces" seen in older reference works are no longer used in formal classifications.
 
@@ -29,7 +37,8 @@ Traditional classification divide fish into three extant classes, and with extin
        Unlike groupings such as birds or mammals, fish are not a single clade but a paraphyletic collection of taxa, including hagfishes, lampreys, sharks and rays, ray-finned fish, coelacanths, and lungfish.[13][14] Indeed, lungfish and coelacanths are closer relatives of tetrapods (such as mammals, birds, amphibians, etc.) than of other fish such as ray-finned fish or sharks, so the last common ancestor of all fish is also an ancestor to tetrapods.
        As paraphyletic groups are no longer recognised in modern systematic biology, the use of the term "fish" as a biological group must be avoided.</p>
 
-    </div>
+   </div>
+
 
 
  </body>
